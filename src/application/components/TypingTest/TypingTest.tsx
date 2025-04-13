@@ -114,9 +114,6 @@ const TypingTest: React.FC = () => {
     refreshLines();
   }, [refreshLines, resetTimer]);
 
-  // Create a disabled dummy onChange handler for inactive lines
-  const dummyOnChange = () => {};
-
   return (
     <div className={classes.typingTestContainer}>
       <div className={classes.header}>
@@ -137,7 +134,7 @@ const TypingTest: React.FC = () => {
               <LineInput
                 line={line}
                 text={index === 0 ? enteredText : ""}
-                onChange={index === 0 ? onTextChange : dummyOnChange}
+                onChange={index === 0 ? onTextChange : () => {}}
                 onLineComplete={index === 0 ? onLineComplete : () => {}}
                 isActive={index === 0}
                 isLastLine={index === 0 && lines.length === 1}
