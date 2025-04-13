@@ -1,4 +1,4 @@
-# Getting Started with LINCtype
+# Getting Started
 
 Quick start:
 Install dependencies: npm install
