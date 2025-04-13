@@ -21,6 +21,7 @@ You will also see any lint errors in the console.
 ### `npm run json-server`
 
 Runs the JSON Server pseudo-db which can be found in the db.json file. JSON Server supports standard CRUD operations. To learn more about json-server, see its [npm page](https://www.npmjs.com/package/json-server) for more information.
+It will run on port 3001.
 
 ### `npm test`
 
@@ -31,12 +32,12 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Domain
 
-The domain layer is the core of the application. It contains the business logic and the data access logic.
+The domain layer is the core of the application. It contains the interfaces for our repositories.
 
 ### Application
 
-The application layer is the layer that is responsible for the application's logic. It is responsible for the application's business logic and the data access logic. In our case, since this is a frontend application, our use cases are the components and hooks that are responsible for the application's logic.
+The application layer is the layer that is responsible for the application's logic. It is responsible for the application's business logic. In our case, since this is a frontend application, our use cases are the components and hooks that are responsible for the application's logic.
 
 ### Infrastructure
 
-The infrastructure layer is the layer that is responsible for the data access logic. It is responsible for the data access logic and the data storage logic. Here mostly will go the repositories responsible for connecting to the api.
+The infrastructure layer is the layer that is responsible for the data access logic and the data storage logic. Here mostly will go the repositories responsible for connecting to the api.
