@@ -31,12 +31,12 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### Domain
 
-The domain layer is the core of the application. It contains the business logic and the data access logic.
+The domain layer is the core of the application. It contains the interfaces for our repositories.
 
 ### Application
 
-The application layer is the layer that is responsible for the application's logic. It is responsible for the application's business logic and the data access logic. In our case, since this is a frontend application, our use cases are the components and hooks that are responsible for the application's logic.
+The application layer is the layer that is responsible for the application's logic. It is responsible for the application's business logic. In our case, since this is a frontend application, our use cases are the components and hooks that are responsible for the application's logic.
 
 ### Infrastructure
 
-The infrastructure layer is the layer that is responsible for the data access logic. It is responsible for the data access logic and the data storage logic. Here mostly will go the repositories responsible for connecting to the api.
+The infrastructure layer is the layer that is responsible for the data access logic and the data storage logic. Here mostly will go the repositories responsible for connecting to the api.
