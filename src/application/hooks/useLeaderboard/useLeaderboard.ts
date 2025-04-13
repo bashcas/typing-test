@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { LeaderboardRepositoryContext } from "@/application/contexts/LeaderboardRepositoryContext";
 import { LeaderboardEntry } from "@/domain/repositories/LeaderboardRepository";
 
-const useLeaderboardQueryKey = ["leaderboard"];
+export const useLeaderboardQueryKey = ["leaderboard"];
 
 const useLeaderboard = () => {
   const leaderboardRepository = useContext(LeaderboardRepositoryContext);

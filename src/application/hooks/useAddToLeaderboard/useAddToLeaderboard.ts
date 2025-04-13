@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { LeaderboardRepositoryContext } from "@/application/contexts/LeaderboardRepositoryContext";
 import { LeaderboardEntry } from "@/domain/repositories/LeaderboardRepository";
+import { useLeaderboardQueryKey } from "../useLeaderboard/useLeaderboard";
 
 export type LeaderboardEntryData = Omit<LeaderboardEntry, "id">;
 
@@ -25,7 +26,7 @@ const useAddToLeaderboard = (props: UseAddToLeaderboardProps) => {
       return leaderboardRepository.addLeaderboardEntry(newEntry);
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["leaderboard"] });
+      queryClient.invalidateQueries({ queryKey: useLeaderboardQueryKey });
       props.onSuccess?.();
     },
     onError: (error) => {
