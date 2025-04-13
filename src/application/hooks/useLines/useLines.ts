@@ -79,6 +79,7 @@ const useLines = ({ numberOfLines }: UseLinesProps): UseLinesReturn => {
     const newLines = getRandomLines();
     setLines(newLines);
     setOriginalLines(newLines);
+    setEnteredLines([]);
   }, [getRandomLines]);
 
   const removeLine = useCallback((enteredText: string) => {
