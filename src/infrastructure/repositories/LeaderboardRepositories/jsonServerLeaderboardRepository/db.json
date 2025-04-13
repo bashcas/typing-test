@@ -1,0 +1,68 @@
+{
+  "leaderboard": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "username": "Charity",
+      "score": 505.1667,
+      "accuracy": 1,
+      "wpm": 121.24,
+      "words": 25
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440001",
+      "username": "Kim",
+      "score": 919.0662,
+      "accuracy": 0.98,
+      "wpm": 56.45,
+      "words": 112
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440002",
+      "username": "Scott",
+      "score": 1041.6963,
+      "accuracy": 0.99,
+      "wpm": 62.09,
+      "words": 124
+    },
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440003",
+      "username": "Ismael",
+      "score": 700.9806,
+      "accuracy": 0.97,
+      "wpm": 49.77,
+      "words": 99
+    },
+    {
+      "username": "sebas",
+      "score": 220.92368526131156,
+      "accuracy": 0.833289031619292,
+      "wpm": 56,
+      "words": 20,
+      "id": "UwRtubD"
+    },
+    {
+      "username": "scastanedag",
+      "score": 562.2752293577981,
+      "accuracy": 0.963302752293578,
+      "wpm": 37,
+      "words": 16,
+      "id": "e84e171b-8c7f-4f94-b1f9-bdc1eacca6cc"
+    },
+    {
+      "username": "hasgly",
+      "score": 33.1559633027523,
+      "accuracy": 0.06422018348623854,
+      "wpm": 42,
+      "words": 16,
+      "id": "c538e51c-f13a-434d-adad-8e121832f3b2"
+    },
+    {
+      "username": "kajsdkjasd",
+      "score": 426.5,
+      "accuracy": 0.25,
+      "wpm": 82,
+      "words": 21,
+      "id": "bcb4116e-7226-4e5b-af06-6ff1eab027c5"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+.defaultTimer {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.inlineTimer {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  background-color: rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.largeTimer {
+  display: block;
+  padding: 12px 16px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fixedTimer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.label {
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.time {
+  font-family: monospace;
+  font-weight: 600;
+}

@@ -1,0 +1,111 @@
+.typingTestContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.linesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.inactiveLine {
+  opacity: 0.6;
+  pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.activeLine {
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.3);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.completedMessage {
+  text-align: center;
+  margin: 50px 0 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f0f9ff;
+  color: #1e90ff;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.completedMessage h2 {
+  margin-bottom: 20px;
+}
+
+.testResults {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: white;
+  padding: 15px 25px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.testResults p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 16px;
+}
+
+.testResults p:last-child {
+  border-bottom: none;
+  font-weight: bold;
+  color: #1e90ff;
+}
+
+.cancelButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.cancelButton {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: #dc3545;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancelButton:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cancelButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,170 @@
+.lineInputContainer {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 800px;
+  font-family: monospace;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: text;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.textDisplay {
+  width: fit-content;
+  padding: 12px 16px;
+  white-space: nowrap; /* Prevent wrapping */
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-weight: 400;
+  background-color: transparent;
+  position: relative;
+  min-height: 50px;
+  transition: border-color 0.2s;
+  margin: 0 auto;
+  overflow: hidden; /* Prevent overflow */
+}
+
+.textDisplay.focused {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+.referenceText {
+  position: relative;
+  white-space: pre;
+  pointer-events: none;
+  user-select: none;
+}
+
+.ghostLayer {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+  white-space: pre;
+  display: flex;
+  pointer-events: none;
+  user-select: none;
+}
+
+.typedText {
+  color: transparent;
+  caret-color: transparent;
+  position: relative;
+  white-space: pre;
+  font-family: monospace;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.cursor {
+  width: 2px;
+  height: 1.2em;
+  background-color: #1e90ff;
+  animation: blink 1s infinite;
+  position: relative;
+  margin-top: 0.2em;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.textDisplay span {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+.inputField {
+  padding: 12px 16px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  letter-spacing: 0;
+  word-spacing: 0;
+  margin: 0 auto;
+}
+
+.correct {
+  color: #3cb371; /* Green */
+  font-weight: 500;
+}
+
+.incorrect {
+  color: #ff6347; /* Red */
+  font-weight: 500;
+}
+
+.current {
+  color: #1e90ff; /* Blue */
+  font-weight: 500;
+  position: relative;
+}
+
+.currentMismatch {
+  color: #1e90ff;
+  font-weight: 500;
+  position: relative;
+  background-color: rgba(255, 99, 71, 0.1);
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1e90ff;
+}
+
+.currentMismatch::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #1e90ff;
+}
+
+.pending {
+  color: #888; /* Gray */
+  font-weight: 400;
+}
+
+.hiddenInput {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.ghostTyped {
+  color: #1e90ff;
+  font-weight: 500;
+  border-bottom: 2px solid #1e90ff;
+}
+
+.remaining {
+  color: #bbb;
+}
